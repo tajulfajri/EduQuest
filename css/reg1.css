@@ -1,0 +1,110 @@
+
+
+/* Reset dasar untuk menghilangkan margin dan padding default pada semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding tidak menambah ukuran total elemen */
+    font-family: 'Poppins', sans-serif; /* Mengatur font */
+}
+
+/* Mengatur section agar berada di tengah halaman dengan background gambar */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Membuat tinggi section sebesar 100% tinggi viewport */
+    width: 100%; /* Lebar section 100% */
+    background: url('../img/logobaru.jpg') no-repeat center center; /* Mengatur background gambar */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh section */
+}
+
+/* Kotak form yang berada di tengah dengan desain card */
+.card {
+    width: 400px; /* Lebar card */
+    background: rgba(255, 255, 255, 0.8); /* Warna latar card dengan sedikit transparansi */
+    border-radius: 10px; /* Membuat sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut untuk efek 3D */
+    overflow: hidden; /* Agar isi tidak keluar dari card */
+}
+
+/* Memberikan padding pada bagian dalam card */
+.card-body {
+    padding: 20px; /* Memberikan jarak pada isi card */
+}
+
+/* Judul form */
+h2 {
+    font-size: 2em; /* Ukuran font besar */
+    color: #333; /* Warna teks gelap */
+    text-align: center; /* Teks berada di tengah */
+    margin-bottom: 20px; /* Jarak di bawah judul */
+}
+
+/* Mengatur label input di form */
+label {
+    font-size: 1em; /* Ukuran font normal */
+    color: #555; /* Warna teks abu-abu */
+    display: block; /* Agar label berada di atas input */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+/* Mengatur input pada form */
+input {
+    width: 100%; /* Lebar penuh pada input */
+    padding: 10px; /* Jarak dalam input */
+    margin-bottom: 15px; /* Jarak di bawah input */
+    border: 1px solid #ccc; /* Garis batas abu-abu muda */
+    border-radius: 5px; /* Membuat sudut input sedikit membulat */
+    outline: none; /* Menghilangkan garis biru saat input difokuskan */
+}
+
+/* Tombol submit */
+button {
+    width: 100%; /* Tombol memenuhi lebar penuh */
+    padding: 10px; /* Jarak dalam tombol */
+    background-color: #007bff; /* Warna tombol biru */
+    color: #fff; /* Warna teks tombol putih */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut tombol sedikit membulat */
+    cursor: pointer; /* Menunjukkan bahwa tombol bisa diklik */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #0056b3; /* Warna tombol berubah lebih gelap saat dihover */
+}
+
+/* Mengatur link pada halaman */
+a {
+    color: #007bff; /* Warna link biru */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Hover pada link */
+a:hover {
+    text-decoration: underline; /* Menampilkan garis bawah saat hover */
+}
+
+/* Mengatur form-group agar lebih rapi */
+.form-group {
+    margin-bottom: 15px; /* Memberikan jarak antar elemen form */
+}
+
+/* Mengatur tampilan checkbox dan link dalam form */
+.form-check-label {
+    color: #555; /* Warna teks abu-abu */
+}
+
+.float-right {
+    float: right; /* Membuat elemen (link) berada di sisi kanan */
+    font-size: 0.9em; /* Ukuran font lebih kecil */
+}
+
+/* Mengatur responsivitas untuk perangkat mobile */
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Lebar card penuh pada layar kecil */
+    }
+}
