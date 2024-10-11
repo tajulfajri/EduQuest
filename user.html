@@ -16,24 +16,35 @@
         <div class="card" style="width: 400px;">
             <div class="card-body">
                 <h2 class="text-center">Register</h2>
-                <form action="">
+                <form id="registerForm" onsubmit="showPopup()"> 
                     <div class="form-group">
                         <label for="username"><ion-icon name="person-outline"></ion-icon> Username</label>
-                        <input type="text" class="form-control" id="username" required>
+                        <input type="email" placeholder="Type your email" class="form-control" id="username" required>
                     </div>
                     <div class="form-group">
                         <label for="password"><ion-icon name="lock-closed-outline"></ion-icon> Password</label>
-                        <input type="password" class="form-control" id="password" required>
+                        <input type="password" placeholder="Type your password" class="form-control" id="password"
+                            required>
                     </div>
                     <div class="text-center">
-                        <a href="Web-Login.html" target="_self">
-                            <button type="button" class="btn btn-primary btn-block">Daftar</button>
-                        </a>
+                        <button type="submit" class="btn btn-primary btn-block">Daftar</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <script>
+        function showPopup() {
+            event.preventDefault(); // Mencegah pengiriman form
+            alert("Registrasi berhasil!"); // Pop-up sederhana dengan pesan
+            var username = prompt("enter your name: ")
+            window.location.href = "Web-Login.html"; // Pindah ke halaman login setelah pop-up ditutup
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

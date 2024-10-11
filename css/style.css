@@ -1,62 +1,105 @@
 
 /* Navbar start */
 .hero-box .box p {
-    width: 500px;
+  width: 500px;
+}
+
+.hero-box .box img {
+  width: 400px;
+}
+
+@media (max-width: 992px) {
+  .hero-box .box p {
+    font-size: 14px;
+    width: 300px;
   }
-  
+
   .hero-box .box img {
-    width: 400px;
+    width: 300px;
   }
-  
-  @media (max-width: 992px) {
-    .hero-box .box p {
-      font-size: 14px;
-      width: 300px;
-    }
-  
-    .hero-box .box img {
-      width: 300px;
-    }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px;
   }
-  
-  @media (max-width: 768px) {
-    .hero {
-      padding-top: 50px;
-    }
-  
-    .hero-box {
-      text-align: center;
-    }
-  
-    .hero-box .box p {
-      width: 100%;
-    }
+
+  .hero-box {
+    text-align: center;
   }
+
+  .hero-box .box p {
+    width: 100%;
+  }
+}
 /* navbar end */
 
 /* Grid start */
 .grid-box img {
-  max-width: 100px;
-  height: auto;
+max-width: 100px;
+height: auto;
+}
+
+@media (max-width: 576px) {
+.carousel-item .col-lg-4 {
+    max-width: 100%;
+    flex: none;
+    margin-bottom: 20px; 
+}
+
+.carousel-item .service {
+    margin-bottom: 20px; 
+}
+}
+
+@media (min-width: 577px) {
+.carousel-item .col-lg-4 {
+    max-width: 100%;
+    flex: none;
+    margin-bottom: 20px;
+}
+
+.carousel-item .service {
+    margin-bottom: 20px;
+}
 }
 /* Grid end */
 
+/* icon scroll top */
+.scrolltop {
+display: none; 
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 100;
+background-color: #338fa8;
+color: white;
+padding: 10px;
+border-radius: 50%;
+}
+.scrolltop_icon {
+font-size: 24px;
+}
+
+/*icom scroll top end*/
+
 /* footer start */
-  .footer {
-    margin-top: 100px;
-    padding-bottom: 20px;
-    padding-top: 3rem;
-  }
-  
-  .footer-box .row .col:nth-child(2) a {
-    opacity: 75%;
-  }
-  
-  .footer-box .row .col:nth-child(2) a:hover {
-    opacity: 100%;
-  }
-  
-  .copyright {
-    margin-top: 60px;
-  }
+.footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  padding-top: 3rem;
+}
+
+.footer-box .row .col:nth-child(2) a {
+  opacity: 75%;
+}
+
+.footer-box .row .col:nth-child(2) a:hover {
+  opacity: 100%;
+}
+
+.copyright {
+  margin-top: 60px;
+}
 /* footer end */
+

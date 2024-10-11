@@ -14,9 +14,23 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
 </head>
 
 <body>
+    <script>
+        window.onload = function() {
+            alert("Selamat datang!");
+        };
+    </script>
+
+    <!-- scroll ke atas -->
+    <a href="#" class="scrolltop " id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop_icon'></i>
+    </a>
+
     <!-- Navbar start  -->
     <nav class="navbar navbar-expand-lg bg-info py-3">
         <div class="container">
@@ -36,13 +50,10 @@
                         <a class="nav-link text-white" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#Class">Class</a>
+                        <a class="nav-link text-white" href="#Courses">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="Ourteam.html">Ourteam</a>
+                        <a class="nav-link text-white" href="Ourteam.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="Web-Login.html">Login</a>
@@ -87,57 +98,77 @@
                 <h1 class="fw-bold mb-3">Konten</h1>
                 <p>Macam-macam kelas yang bisa diikuti</p>
                 <div class="row g-3 text-center pt-2">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-fluid img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Vocabulary</h4>
-                            <p class="lh-lg">Kelas Vocabulary memperkenalkan kosakata dasar seperti warna, angka, benda
-                                sehari-hari, hewan, dan makanan sehingga belajar jadi lebih menyenangkan dan efektif.
-                            </p>
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-fluid img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Vocabulary</h4>
+                                            <p class="lh-lg">Kelas Vocabulary memperkenalkan kosakata dasar seperti warna, angka, benda
+                                                sehari-hari, hewan, dan makanan sehingga belajar jadi lebih menyenangkan dan efektif.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Grammar Sederhana</h4>
+                                            <p class="lh-lg">Kelas Simple Grammar mengajarkan tata bahasa dasar, termasuk kata benda,
+                                                kata kerja, kata sifat, dan Simple Present Tense. Anak-anak belajar membuat kalimat
+                                                sederhana sehari-hari.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Pronunciation Practice</h4>
+                                            <p class="lh-lg">Kelas Pronunciation Practice melatih pengucapan kata dan frasa melalui
+                                                fonik, pelafalan, tongue twisters, Termasuk kegiatan aktivitas mendengarkan dan menirukan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Speaking and Listening</h4>
+                                            <p class="lh-lg">Kelas Speaking and Listening melatih berbicara dan mendengarkan melalui
+                                                dialog sederhana, percakapan dua arah, serta latihan mendengarkan dengan instruksi video dan audio menarik.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Reading Comprehension</h4>
+                                            <p class="lh-lg">Kelas Reading Comprehension meningkatkan kemampuan membaca melalui cerita
+                                                bergambar, di mana anak-anak menjawab pertanyaan dan mengenal kosakata baru dari dongeng
+                                                atau fabel.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="service p-4 shadow bg-info text-white rounded-4">
+                                            <img src="./img/2.png" class="img-thumbnail" alt="...">
+                                            <h4 class="mb-3 fw-bold">Games and Songs</h4>
+                                            <p class="lh-lg">Kelas Games and Songs mengajarkan bahasa Inggris melalui lagu dan permainan
+                                                edukatif seperti bingo dan crossword puzzles, dimana anak-anak belajar dengan cara yang
+                                                menyenangkan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Grammar Sederhana</h4>
-                            <p class="lh-lg">Kelas Simple Grammar mengajarkan tata bahasa dasar, termasuk kata benda,
-                                kata kerja, kata sifat, dan Simple Present Tense. Anak-anak belajar membuat kalimat
-                                sederhana sehari-hari.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Pronunciation Practice</h4>
-                            <p class="lh-lg">Kelas Pronunciation Practice melatih pengucapan kata dan frasa melalui
-                                fonik, pelafalan, tongue twisters, serta aktivitas mendengarkan dan menirukan.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Speaking and Listening</h4>
-                            <p class="lh-lg">Kelas Speaking and Listening melatih berbicara dan mendengarkan melalui
-                                dialog sederhana, percakapan dua arah, dan latihan dengan video/audio interaktif.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Reading Comprehension</h4>
-                            <p class="lh-lg">Kelas Reading Comprehension meningkatkan kemampuan membaca melalui cerita
-                                bergambar, di mana anak-anak menjawab pertanyaan dan mengenal kosakata baru dari dongeng
-                                atau fabel.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service p-4 shadow bg-info text-white rounded-4">
-                            <img src="./img/2.png" class="img-thumbnail" alt="...">
-                            <h4 class="mb-3 fw-bold">Games and Songs</h4>
-                            <p class="lh-lg">Kelas Games and Songs mengajarkan bahasa Inggris melalui lagu dan permainan
-                                edukatif seperti bingo dan crossword puzzles, dimana anak-anak belajar dengan cara yang
-                                menyenangkan.</p>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -163,9 +194,9 @@
                     <div class="col col-md-2 col-12 d-flex flex-column text-white gap-2">
                         <h4 class="fw-bold">Menu</h4>
                         <a href="home.html" class="text-white text-decoration-none">Home</a>
-                        <a href="#Class" class="text-white text-decoration-none">Class</a>
-                        <a href="#About" class="text-white text-decoration-none">About</a>
-                        <a href="Ourteam.html" class="text-white text-decoration-none">Ourteam</a>
+                        <a href="#Courses" class="text-white text-decoration-none">Courses</a>
+                        <a href="Ourteam.html" class="text-white text-decoration-none">About Us</a>
+                        <a href="Web-Login.html" class="text-white text-decoration-none">Login</a>
                     </div>
                     <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
                         <h4 class="fw-bold">Contact Us</h4>
@@ -189,6 +220,7 @@
     </section>
     <!-- Section footer end-->
 
+    <script src="homejs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
