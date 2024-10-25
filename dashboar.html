@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/logobaru.jpg" type="image/x-icon rounded" />
+  <title>EduQuest</title>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="home.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" placeholder="Search"/>
+            </div>
+            <img src="imglogreg/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-container">
+            <h3 class="main-title">My Courses</h3>
+            <div class="card-wrapper">
+                <div class="class--card light-red">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <!-- <span class="title">Kelas Saya</span> -->
+                            <!-- <span class="amount-value">COBAAA</span> -->
+                        </div>
+                        <i class="fas fa-user-friends "></i>
+                    </div>
+                    <!-- <span class="card-detail">INI JUGA BELUM </span> -->
+                </div>
+
+                <div class="class--card light-purple">
+                    <div class="card-header">
+                        <div class="ammount">
+                            <!-- <span class="title">BUKU</span>
+                            <span class="amount-value">YAAAA</span> -->
+                        </div>
+                        <i class="fas fa-book-open "></i>
+                    </div>
+                    <!-- <span class="card-detail">YANG DISINI BELUM </span> -->
+                  </div>
+            </div>
+        </div>
+        <div class="tabular-wrapper">
+          <h3 class="main-title">Quiz Result</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Tanggal</th>
+                  <th>Kelas</th>
+                  <th>Judul Kelas</th>
+                  <th>Materi</th>
+                  <th>Nilai</th>
+                  <th>action</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>
+                      1
+                    </td>
+                    <td>2024-08-09</td>
+                    <td>English Class 1</td>
+                    <td>Vocabulary</td>
+                    <td>Daily activity</td>
+                    <td>90</td>
+                    <td><button>View</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      2
+                    </td>
+                    <td>2024-08-12</td>
+                    <td>English Class 1</td>
+                    <td>Vocabulary</td>
+                    <td>Gardening</td>
+                    <td>100</td>
+                    <td><button>View</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      3
+                    </td>
+                    <td>2024-08-13</td>
+                    <td>English Class 1</td>
+                    <td>Vocabulary</td>
+                    <td>Holiday</td>
+                    <td>90</td>
+                    <td><button>View</button></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="7"></td>
+                  </tr>
+                </tfoot>
+              </thead>
+            </table>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

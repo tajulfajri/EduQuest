@@ -24,6 +24,15 @@ html {
   width: 400px;
 }
 
+.sign a{
+  background-color: #e4a634;
+}
+
+.sign a:hover{
+  background-color: #e4cf34;
+}
+
+
 @media (max-width: 992px) {
   .hero-box .box p {
     font-size: 14px;
